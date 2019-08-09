@@ -12,4 +12,4 @@ EntityGeneratorClient类中：
 
 GeneratorSwing类中:
     数据库的配置要改..
-    运行主文件，包名需要注意：com.kb.Org，项目简称：Org
+    运行主文件，包名需要注意：com.kb.org，项目简称：Org
