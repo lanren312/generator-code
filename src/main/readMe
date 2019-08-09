@@ -1,0 +1,15 @@
+使用注意事项：
+    目前代码结构:
+        实体类:
+            com.kb.common.org(具体的模块).DO(DTO,Query,VO).(具体的DO)
+            ps: com.kb.common.org.DO.StaffInfoDO,com.kb.common.org.Query.StaffInfoQuery
+        具体模块的微服务:
+            com.kb.org.controller(mapper.service(impl)),xml文件写入resource的mapper文件夹下，不需要再分包..
+
+EntityGeneratorClient类中：
+    模板路径，输出路径要改，在本地配置..
+    getClassName()方法可以获取类名并截取..
+
+GeneratorSwing类中:
+    数据库的配置要改..
+    运行主文件，包名需要注意：com.kb.Org，项目简称：Org
