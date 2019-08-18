@@ -8,8 +8,8 @@
 
 EntityGeneratorClient类中：
     模板路径，输出路径要改，在本地配置..
-    getClassName()方法可以获取类名并截取..
+    getClassName()方法可以获取类名并截取.. (比如 kb ,就写2)
 
 GeneratorSwing类中:
     数据库的配置要改..
-    运行主文件，包名需要注意：com.kb.org，项目简称：Org
+    运行主文件，包名需要注意：com.kb.org，项目简称：org（大小写取决包的命名）
