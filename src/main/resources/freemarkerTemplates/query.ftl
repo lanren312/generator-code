@@ -19,6 +19,7 @@ import java.math.BigDecimal;
  * ${tableDesc} 查询条件
  */
 @Data
+@ApiModel(value = "${class}Query",description = "${tableDesc}")
 public class ${class}Query extends BaseQuery{
 <#list properties as property>
     /**
@@ -27,6 +28,7 @@ public class ${class}Query extends BaseQuery{
     <#if property.javaType=="Date">
     @JsonFormat(timezone = "GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     </#if>
+    @ApiModelProperty(value = "${property.comment}")
     private ${property.javaType} ${property.propertyName};
 </#list>
 

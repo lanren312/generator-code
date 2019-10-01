@@ -21,6 +21,7 @@ import java.math.BigDecimal;
  * ${tableDesc}
  */
 @Data
+@ApiModel(value = "${class}DO",description = "${tableDesc}")
 public class ${class}DO implements Serializable{
 <#list properties as property>
     /**
@@ -29,6 +30,7 @@ public class ${class}DO implements Serializable{
     <#if property.javaType=="Date">
     @JsonFormat(timezone = "GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     </#if>
+    @ApiModelProperty(value = "${property.comment}")
     private ${property.javaType} ${property.propertyName};
 </#list>
 
